@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" />	
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<script>
+		{document.ontouchmove = function(event){
+    			event.preventDefault();
+			$('html, body').scrollTop( $(document).height() );
+		};
+		}
+	</script>
+	<script>
+		function start(){
+			$('html, body').scrollTop( $(document).height() );
+			var t = setTimeout(start, 1);
+		}
+		
+	</script>
+</head>
+<body onload="start()">
+	<div id="sky"></div>
+	<div id="bord">
+		<div class="center">
+			<img src="cap-cu-neuroni.png" class="neuronal-head" />
+			<a href="http://www.mykoolio.com/lms/?redirect=0"><img class="buton-lectii" src="buton-lectii.png" /></a>
+		<div>
+	<div class="neuroni font-border">3475303</div>
+			<a href="http://www.mykoolio.com/lms/?redirect=0"><div class="base profile font-border">
+				<img src="profil.png" class="profile-pic" />
+				Profil
+			</div></a>
+			<a href="http://www.mykoolio.com/lms/?redirect=0"><div class="base medalii font-border">
+				347
+				<img src="medalii.png" class="medalii-pic" />
+			</div></a>
+	</div>
+
+
+</body>
+</html>
